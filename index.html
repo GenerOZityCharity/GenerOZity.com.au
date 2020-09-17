@@ -41,8 +41,6 @@
 </head>
 
 <body>
-<iframe src="https://generozity.com.au/wewantyou/index.html" width="100%" height="860px" style="border:0"></iframe>
-
     <nav class="navbar navbar-light bg-dark">
         <div class="container d-flex flex-column flex-md-row justify-content-between">
             <a class="py-2 d-none d-md-inline-block text-white" href="https://donations.generozity.com.au" target="_blank"><button type="button" class="btn btn-warning">Donate Here</button></a>
@@ -65,7 +63,22 @@
                     <h2 class="text-white">GenerOZity 8 - Partnering with PAX Online and Cure Cancer Australia</h2>
                     <br>
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="1206" height="678" src="https://www.youtube.com/embed/6lfr0Xs1T2Y?modestbranding=1&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        
+                        <div id="twitch-embed"></div>
+
+                        <!-- Load the Twitch embed script -->
+                        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+                        <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+                        <script type="text/javascript">
+                          new Twitch.Embed("twitch-embed", {
+                            width: 854,
+                            height: 480,
+                            channel: "generozity"
+                          });
+                        </script>                        
+                    
                     </div>
                 </div>
             </div>
